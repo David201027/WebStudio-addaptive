@@ -1,0 +1,36 @@
+.portfolio-section{
+    padding: 60px 0;
+}
+.filter-title{
+    display: none;
+}
+.filter-list{
+    width: 326px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.filter-list-item{
+    &:not(:last-child){
+        margin-right: 8px;
+    }
+}
+.list-item-button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    background-color: getColor('button-p');
+    padding: 6px 22px;
+    border-radius: 4px;
+
+    &.active-but{
+        background-color: getColor('main');
+        color: getColor('light');
+    }
+    &:hover{
+        background-color: getColor('main');
+        color: getColor('light');
+    }
+}

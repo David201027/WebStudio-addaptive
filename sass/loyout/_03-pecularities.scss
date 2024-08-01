@@ -1,0 +1,66 @@
+.section-peculiarities{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.title-peculiarities{
+    display: none;
+}
+.list-peculiarities{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.list__item-peculiarities {
+    width: 450px;
+    
+    &:not(:last-child){
+        padding-bottom: 30px;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 120px;
+        margin-bottom: 30px;
+        border-radius: 4px;
+        background-repeat: no-repeat;
+        background-position: center;
+        // background-color: getColor(gray);
+        @include backgraund(getColor(gray));
+    }
+
+    &:nth-child(1)::before {
+        background-image: url(../images/antenna.svg);
+    }
+
+    &:nth-child(2)::before {
+        background-image: url(../images/clock.svg);
+    }
+
+    &:nth-child(3)::before {
+        background-image: url(../images/diagram.svg);
+    }
+
+    &:nth-child(4)::before {
+        background-image: url(../images/astronaut.svg);
+    }
+}
+.title-item-peculiarities {
+    color: getColor(dark);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: getColor(text);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+}
