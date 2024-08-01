@@ -623,6 +623,9 @@ button:hover {
   flex-wrap: wrap;
 }
 
+.filter-list-item {
+  margin-bottom: 15px;
+}
 .filter-list-item:not(:last-child) {
   margin-right: 8px;
 }
