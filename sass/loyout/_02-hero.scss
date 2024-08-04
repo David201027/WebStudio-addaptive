@@ -211,3 +211,30 @@
 .no-scroll {
   overflow: hidden;
 }  
+
+@media screen and (min-width: getBreakPoint('tablet')){
+  .hero{
+    @include backgraund(getColor(backgraund));
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    width: 768px;
+  }
+  .hero-div{
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title-hero{
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 162%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: getColor('light');
+  }
+}

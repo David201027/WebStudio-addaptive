@@ -1,31 +1,31 @@
 .main-conteiner{
-    width: 480px;  
+    width: 1600px;  
     margin: 0 auto;
-    // outline: 1px red dashed; 
+    // outline: 1px green dashed; 
 
-    // @media screen and (min-width: 480px) {
-    //     width: 480px;
-    // }
-    // @media screen and (min-width: 768px) {
-    //     width: 768px;
-    // }
-    // @media screen and (min-width: 1200px) {
-    //     width: 1200px;
-    // }
+    @media screen and (min-width: getBreakPoint('mobile')) {
+        width: 480px;
+    }
+    @media screen and (min-width: getBreakPoint('laptop')) {
+        width: 768px;
+    }
+    @media screen and (min-width: getBreakPoint('desktop')) {
+        width: 1200px;
+    }
 }
 .conteiner{
     width: 450px;
     margin: 0 auto;
     padding: 0 15px;
-    // outline: 1px red dashed; 
+    // outline: 1px red dashed;
 
-    // @media screen and (min-width: 480px) {
-    //     width: 480px;
-    // }
-    // @media screen and (min-width: 768px) {
-    //     width: 768px;
-    // }
-    // @media screen and (min-width: 1200px) {
-    //     width: 1200px;
-    // }
+    @media screen and (min-width: getBreakPoint('mobile')) {
+        width: 480px;
+    }
+    @media screen and (min-width: getBreakPoint('laptop')) {
+        width: 768px;
+    }
+    @media screen and (min-width: getBreakPoint('desktop')) {
+        width: 1200px;
+    }
 }

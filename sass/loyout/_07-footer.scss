@@ -180,3 +180,18 @@
         }
     }
 }
+@media screen and (min-width: getBreakPoint('tablet')) {
+    .footer{
+
+        .footer-div{
+            width: 768px;
+
+            .tablet-footer{
+                padding-left: 61px;
+                padding-right: 71px;
+                display: flex;
+                gap: 165px;
+            }
+        }
+    }
+}
